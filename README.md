@@ -19,8 +19,8 @@ Batfish出力サンプル (参照用)
 |OSPFエリア設定|[ospf_area_conf](https://pybatfish.readthedocs.io/en/latest/notebooks/configProperties.html#OSPF-Area-Configuration)|[ospf_area_conf.csv](./original_asis/ospf_area_conf.csv)||
 |BGPプロセス設定|[bgp_proc_conf](https://pybatfish.readthedocs.io/en/latest/notebooks/configProperties.html#BGP-Process-Configuration)|[bgp_proc_conf.csv](./original_asis/bgp_proc_conf.csv)||
 |BGPピア設定|[bgp_peer_conf](https://pybatfish.readthedocs.io/en/latest/notebooks/configProperties.html#BGP-Peer-Configuration)|[bgp_peer_conf.csv](./original_asis/bgp_peer_conf.csv)||
-|経路情報(静的経路)|[routes](https://pybatfish.readthedocs.io/en/latest/notebooks/routingTables.html#Routes)|[routes.csv](./original_asis/routes.csv)||
-|名前付きオブジェクト|[named_structures](https://pybatfish.readthedocs.io/en/latest/notebooks/configProperties.html#Named-Structures)|[named_structures.csv](./original_asis/named_structures.csv)||
+|経路情報|[routes](https://pybatfish.readthedocs.io/en/latest/notebooks/routingTables.html#Routes)|[routes.csv](./original_asis/routes.csv)|local,staticのみ参照|
+|名前付きオブジェクト|[named_structures](https://pybatfish.readthedocs.io/en/latest/notebooks/configProperties.html#Named-Structures)|[named_structures.csv](./original_asis/named_structures.csv)|BGP経路フィルタの名前取得で利用|
 
 当初L1/L3トポロジ情報 ([layer1_edges](https://pybatfish.readthedocs.io/en/latest/notebooks/topology.html#User-Provided-Layer-1-Topology), [layer3_edges](https://pybatfish.readthedocs.io/en/latest/notebooks/topology.html#Layer-3-Topology))も参照していましたが interface description 定義ベースのトポロジ管理に移行したので現在は使用していません。
 
