@@ -22,3 +22,6 @@ Batfish出力サンプル (参照用)
 |経路情報(静的経路)|[routes](https://pybatfish.readthedocs.io/en/latest/notebooks/routingTables.html#Routes)|[routes.csv](./original_asis/routes.csv)||
 |名前付きオブジェクト|[named_structures](https://pybatfish.readthedocs.io/en/latest/notebooks/configProperties.html#Named-Structures)|[named_structures.csv](./original_asis/named_structures.csv)||
 
+当初L1/L3トポロジ情報 ([layer1_edges](https://pybatfish.readthedocs.io/en/latest/notebooks/topology.html#User-Provided-Layer-1-Topology), [layer3_edges](https://pybatfish.readthedocs.io/en/latest/notebooks/topology.html#Layer-3-Topology))も参照していましたが interface description 定義ベースのトポロジ管理に移行したので現在は使用していません。
+
+トポロジ情報については[mddo-bgp network](https://github.com/ool-mddo/mddo-bgp)同梱の[トポロジデータ(layer1_topoollgy.json)](https://github.com/ool-mddo/mddo-bgp/blob/main/original_asis/batfish/layer1_topology.json)を参照。これは、interface description の情報→netbox→batfishインプット用のL1トポロジとして出力したものです。詳細は[playground](https://github.com/ool-mddo/playground/tree/main)にある、[物理トポロジデータの生成](https://github.com/ool-mddo/playground/blob/main/demo/layer1_topology/doc/operation.md)を参照してください。
