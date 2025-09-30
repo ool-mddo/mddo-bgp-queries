@@ -1,0 +1,2 @@
+,Node,VLAN_ID,Interfaces,VXLAN_VNI
+0,sw-tk01,1,"[sw-tk01[Ethernet1], sw-tk01[Ethernet2], sw-tk01[Ethernet3], sw-tk01[Ethernet4], sw-tk01[Ethernet5], sw-tk01[Ethernet6], sw-tk01[Ethernet7], sw-tk01[Ethernet8], sw-tk01[Ethernet9], sw-tk01[Ethernet10], sw-tk01[Ethernet11], sw-tk01[Ethernet12], sw-tk01[Ethernet13], sw-tk01[Ethernet14], sw-tk01[Ethernet15], sw-tk01[Ethernet16], sw-tk01[Ethernet17], sw-tk01[Ethernet18], sw-tk01[Ethernet19]]",

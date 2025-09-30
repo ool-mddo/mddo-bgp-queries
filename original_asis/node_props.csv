@@ -1,0 +1,8 @@
+,Node,Configuration_Format
+0,edge-tk11,CISCO_IOS_XR
+1,edge-tk03,JUNIPER
+2,sw-tk01,ARISTA
+3,edge-tk02,CISCO_IOS_XR
+4,core-tk01,JUNIPER
+5,core-tk02,JUNIPER
+6,edge-tk01,JUNIPER

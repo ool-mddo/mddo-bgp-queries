@@ -1,0 +1,13 @@
+,Interface,VRF,Process_ID,OSPF_Area_Name,OSPF_Enabled,OSPF_Passive,OSPF_Cost,OSPF_Network_Type,OSPF_Hello_Interval,OSPF_Dead_Interval
+0,edge-tk03[lo0.0],default,default,0,True,False,0,BROADCAST,10,40
+1,edge-tk11[Loopback0],default,65500,0,True,False,1,BROADCAST,10,40
+2,edge-tk02[GigabitEthernet0/0/0/0],default,65500,0,True,False,10,BROADCAST,10,40
+3,core-tk01[ge-0/0/0.0],default,default,0,True,False,1,BROADCAST,10,40
+4,core-tk02[ge-0/0/0.0],default,default,0,True,False,1,BROADCAST,10,40
+5,edge-tk11[GigabitEthernet0/0/0/0],default,65500,0,True,False,10,BROADCAST,10,40
+6,edge-tk01[ge-0/0/0.0],default,default,0,True,False,1,BROADCAST,10,40
+7,edge-tk02[Loopback0],default,65500,0,True,False,1,BROADCAST,10,40
+8,edge-tk03[ge-0/0/0.0],default,default,0,True,False,1,BROADCAST,10,40
+9,core-tk02[lo0.0],default,default,0,True,False,0,BROADCAST,10,40
+10,core-tk01[lo0.0],default,default,0,True,False,0,BROADCAST,10,40
+11,edge-tk01[lo0.0],default,default,0,True,False,0,BROADCAST,10,40

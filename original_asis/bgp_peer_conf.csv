@@ -1,0 +1,24 @@
+,Node,VRF,Local_AS,Local_IP,Local_Interface,Confederation,Remote_AS,Remote_IP,Description,Route_Reflector_Client,Cluster_ID,Peer_Group,Import_Policy,Export_Policy,Send_Community,Is_Passive
+0,core-tk01,default,65500,192.168.255.101,,65518,65500,192.168.255.11,Edge-TK11,True,192.168.255.101,Edge-TK,[],['ipv4-full'],True,False
+1,core-tk01,default,65500,192.168.255.101,,65518,65500,192.168.255.1,Edge-TK01,True,192.168.255.101,Edge-TK,[],['ipv4-full'],True,False
+2,core-tk01,default,65500,192.168.255.101,,65518,65500,192.168.255.2,Edge-TK02,True,192.168.255.101,Edge-TK,[],['ipv4-full'],True,False
+3,core-tk01,default,65500,192.168.255.101,,65518,65500,192.168.255.3,Edge-TK03,True,192.168.255.101,Edge-TK,[],['ipv4-full'],True,False
+4,core-tk01,default,65500,192.168.255.101,,65518,65500,192.168.255.102,Core-TK02,False,,INT,[],['ipv4-core'],True,False
+5,core-tk02,default,65500,192.168.255.102,,65518,65500,192.168.255.11,Edge-TK11,True,192.168.255.102,Edge-TK,[],['ipv4-full'],True,False
+6,core-tk02,default,65500,192.168.255.102,,65518,65500,192.168.255.1,Edge-TK01,True,192.168.255.102,Edge-TK,[],['ipv4-full'],True,False
+7,core-tk02,default,65500,192.168.255.102,,65518,65500,192.168.255.2,Edge-TK02,True,192.168.255.102,Edge-TK,[],['ipv4-full'],True,False
+8,core-tk02,default,65500,192.168.255.102,,65518,65500,192.168.255.3,Edge-TK03,True,192.168.255.102,Edge-TK,[],['ipv4-full'],True,False
+9,core-tk02,default,65500,192.168.255.102,,65518,65500,192.168.255.101,Core-TK01,False,,INT,[],['ipv4-core'],True,False
+10,edge-tk01,default,65500,,,65518,65550,172.16.0.5,AS65550_PNI#1_ipv4,False,,PNI,"['as65550-peer-in1-tyo-ipv4', 'reject-in-rule-ipv4']","['as65550-peer-out1-tyo-ipv4', 'reject-out-rule-ipv4']",True,False
+11,edge-tk01,default,65500,192.168.255.1,,65518,65500,192.168.255.101,Core-TK01,False,,INT,[],['ibgp-export'],True,False
+12,edge-tk01,default,65500,192.168.255.1,,65518,65500,192.168.255.102,Core-TK02,False,,INT,[],['ibgp-export'],True,False
+13,edge-tk02,default,65500,172.16.0.10,,65518,65550,172.16.0.9,"""AS65550_PNI1-2_ipv4""",False,,,"['as65550-peer-in1-tyo-ipv4', 'reject-in-ipv4']","['as65550-peer-out1-tyo-ipv4', 'reject-out-ipv4']",True,False
+14,edge-tk02,default,65500,172.16.1.10,,65518,65560,172.16.1.9,"""AS65560_PNI2-1_ipv4""",False,,,"['as65560-peer-in1-tyo-ipv4', 'reject-in-ipv4']","['as65560-peer-out1-tyo-ipv4', 'reject-out-ipv4']",True,False
+15,edge-tk02,default,65500,192.168.255.2,,65518,65500,192.168.255.101,RR,False,,,[],[],False,False
+16,edge-tk02,default,65500,192.168.255.2,,65518,65500,192.168.255.102,RR,False,,,[],[],False,False
+17,edge-tk03,default,65500,,,65518,65560,172.16.1.13,AS65560_PNI#2_ipv4,False,,PNI2,"['as65560-peer-in1-tyo-ipv4', 'reject-in-rule-ipv4']","['as65560-peer-out1-tyo-ipv4', 'reject-out-rule-ipv4']",True,False
+18,edge-tk03,default,65500,192.168.255.3,,65518,65500,192.168.255.101,Core-TK01,False,,INT,[],['ibgp-export'],True,False
+19,edge-tk03,default,65500,192.168.255.3,,65518,65500,192.168.255.102,Core-TK02,False,,INT,[],['ibgp-export'],True,False
+20,edge-tk11,default,65500,192.168.0.17,,65518,65520,192.168.0.18,"""POI-East""",False,,,['POI-East_in'],[],True,False
+21,edge-tk11,default,65500,192.168.255.11,,65518,65500,192.168.255.101,RR,False,,,[],[],False,False
+22,edge-tk11,default,65500,192.168.255.11,,65518,65500,192.168.255.102,RR,False,,,[],[],False,False

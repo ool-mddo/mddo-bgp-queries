@@ -1,0 +1,13 @@
+,Interface,Remote_Interface
+0,sw-tk01[Ethernet1],core-tk01[ge-0/0/0]
+1,core-tk01[ge-0/0/0],sw-tk01[Ethernet1]
+2,sw-tk01[Ethernet2],core-tk02[ge-0/0/0]
+3,core-tk02[ge-0/0/0],sw-tk01[Ethernet2]
+4,sw-tk01[Ethernet3],edge-tk01[ge-0/0/0]
+5,edge-tk01[ge-0/0/0],sw-tk01[Ethernet3]
+6,sw-tk01[Ethernet4],edge-tk02[GigabitEthernet0/0/0/0]
+7,edge-tk02[GigabitEthernet0/0/0/0],sw-tk01[Ethernet4]
+8,sw-tk01[Ethernet5],edge-tk03[ge-0/0/0]
+9,edge-tk03[ge-0/0/0],sw-tk01[Ethernet5]
+10,sw-tk01[Ethernet6],edge-tk11[GigabitEthernet0/0/0/0]
+11,edge-tk11[GigabitEthernet0/0/0/0],sw-tk01[Ethernet6]

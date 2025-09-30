@@ -1,0 +1,7 @@
+,Node,VRF,Process_ID,Areas,Reference_Bandwidth,Router_ID,Export_Policy_Sources,Area_Border_Router
+0,edge-tk01,default,default,['0'],1000000000.0,192.168.255.1,[],False
+1,edge-tk11,default,65500,['0'],100000000.0,192.168.255.11,[],False
+2,edge-tk02,default,65500,['0'],100000000.0,192.168.255.2,[],False
+3,core-tk02,default,default,['0'],1000000000.0,192.168.255.102,[],False
+4,core-tk01,default,default,['0'],1000000000.0,192.168.255.101,[],False
+5,edge-tk03,default,default,['0'],1000000000.0,192.168.255.3,[],False

@@ -1,0 +1,7 @@
+,Node,VRF,Router_ID,Confederation_ID,Confederation_Members,Multipath_EBGP,Multipath_IBGP,Multipath_Match_Mode,Neighbors,Route_Reflector,Tie_Breaker
+0,core-tk01,default,192.168.255.101,65518,65500,False,False,FIRST_AS,"['192.168.255.11', '192.168.255.1', '192.168.255.2', '192.168.255.3', '192.168.255.102']",True,ARRIVAL_ORDER
+1,core-tk02,default,192.168.255.102,65518,65500,False,False,FIRST_AS,"['192.168.255.11', '192.168.255.1', '192.168.255.2', '192.168.255.3', '192.168.255.101']",True,ARRIVAL_ORDER
+2,edge-tk01,default,192.168.255.1,65518,65500,False,False,FIRST_AS,"['172.16.0.5', '192.168.255.101', '192.168.255.102']",False,ARRIVAL_ORDER
+3,edge-tk02,default,192.168.255.2,65518,65500,False,False,EXACT_PATH,"['172.16.0.9', '172.16.1.9', '192.168.255.101', '192.168.255.102']",False,ARRIVAL_ORDER
+4,edge-tk03,default,192.168.255.3,65518,65500,False,False,FIRST_AS,"['172.16.1.13', '192.168.255.101', '192.168.255.102']",False,ARRIVAL_ORDER
+5,edge-tk11,default,192.168.255.11,65518,65500,False,False,EXACT_PATH,"['192.168.0.18', '192.168.255.101', '192.168.255.102']",False,ARRIVAL_ORDER
