@@ -33,5 +33,7 @@ Batfish/BGP Policy 出力サンプル (参照/デモ説明用)
 BGPポリシ(ルール本体)のデータ取得についてはBatfishを利用せず[独自parser(bgp-policy-parser)](https://github.com/ool-mddo/bgp-policy-parser)を使用しています。
 
 出力サンプル
-* [Cisco系](./ttp_outputs/cisco_ios_xr/)
-* [Juniper系](./ttp_outputs/juniper/)
+* TTPによる中間出力(ベンダ依存)
+  * [Cisco系](./ttp_outputs/cisco_ios_xr/)
+  * [Juniper系](./ttp_outputs/juniper/)
+* [標準化した最終的な出力](./ttp_outputs/bgp_policies/)

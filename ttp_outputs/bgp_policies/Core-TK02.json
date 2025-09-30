@@ -1,0 +1,183 @@
+{
+  "node": "192.168.255.102/32",
+  "prefix-set": [],
+  "as-path-set": [],
+  "community-set": [
+    {
+      "name": "aggregated",
+      "communities": [
+        {
+          "community": "65518:1"
+        }
+      ]
+    }
+  ],
+  "policies": [
+    {
+      "name": "ipv4-core",
+      "statements": [
+        {
+          "name": "bgp",
+          "if": "if",
+          "conditions": [
+            {
+              "protocol": "bgp"
+            }
+          ],
+          "actions": [
+            {
+              "target": "accept"
+            }
+          ]
+        },
+        {
+          "name": "aggregate-static",
+          "if": "if",
+          "conditions": [
+            {
+              "protocol": "static"
+            },
+            {
+              "rib": "inet.0"
+            },
+            {
+              "route-filter": {
+                "prefix": "10.100.0.0/16",
+                "length": {},
+                "match-type": "exact"
+              }
+            },
+            {
+              "route-filter": {
+                "prefix": "10.110.0.0/20",
+                "length": {},
+                "match-type": "exact"
+              }
+            },
+            {
+              "route-filter": {
+                "prefix": "10.120.0.0/17",
+                "length": {},
+                "match-type": "exact"
+              }
+            },
+            {
+              "route-filter": {
+                "prefix": "10.130.0.0/21",
+                "length": {},
+                "match-type": "exact"
+              }
+            },
+            {
+              "route-filter": {
+                "prefix": "172.31.255.1/32",
+                "length": {},
+                "match-type": "exact"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "community": {
+                "action": "set",
+                "name": "aggregated"
+              }
+            },
+            {
+              "next-hop": "172.31.255.1"
+            },
+            {
+              "target": "accept"
+            }
+          ]
+        }
+      ],
+      "default": {
+        "actions": [
+          {
+            "target": "reject"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ipv4-full",
+      "statements": [
+        {
+          "name": "bgp",
+          "if": "if",
+          "conditions": [
+            {
+              "protocol": "bgp"
+            }
+          ],
+          "actions": [
+            {
+              "target": "accept"
+            }
+          ]
+        },
+        {
+          "name": "aggregate-static",
+          "if": "if",
+          "conditions": [
+            {
+              "protocol": "static"
+            },
+            {
+              "rib": "inet.0"
+            }
+          ],
+          "actions": [
+            {
+              "community": {
+                "action": "set",
+                "name": "aggregated"
+              }
+            },
+            {
+              "next-hop": "172.31.255.1"
+            },
+            {
+              "target": "accept"
+            }
+          ]
+        },
+        {
+          "name": "default-static",
+          "if": "if",
+          "conditions": [
+            {
+              "protocol": "static"
+            },
+            {
+              "rib": "inet.0"
+            },
+            {
+              "route-filter": {
+                "prefix": "0.0.0.0/0",
+                "length": {},
+                "match-type": "exact"
+              }
+            }
+          ],
+          "actions": [
+            {
+              "next-hop": "172.31.255.1"
+            },
+            {
+              "target": "accept"
+            }
+          ]
+        }
+      ],
+      "default": {
+        "actions": [
+          {
+            "target": "reject"
+          }
+        ]
+      }
+    }
+  ]
+}
