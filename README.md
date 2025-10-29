@@ -5,8 +5,11 @@ Batfish/BGP Policy 出力サンプル (参照/デモ説明用)
 ## Target Network (Input data)
 
 [mddo-bgp network](https://github.com/ool-mddo/mddo-bgp) 参照
+- [Network device configs](https://github.com/ool-mddo/mddo-bgp/tree/main/original_asis/configs)
+- [Layer1 topology](https://github.com/ool-mddo/mddo-bgp/blob/main/original_asis/batfish/layer1_topology.json)
+  - See also: [物理トポロジデータの生成と編集](https://github.com/ool-mddo/playground/blob/main/demo/layer1_topology/README.md)
 
-## Batfish Query
+## Batfish Query (Intermediate output)
 
 [batfish-wrapper](https://github.com/ool-mddo/batfish-wrapper) (詳細は[bf_query_thrower.py](https://github.com/ool-mddo/batfish-wrapper/blob/main/src/bfwrapper/bf_query_thrower.py)) 参照
 
@@ -28,7 +31,7 @@ Batfish/BGP Policy 出力サンプル (参照/デモ説明用)
 
 トポロジ情報については[mddo-bgp network](https://github.com/ool-mddo/mddo-bgp)同梱の[トポロジデータ(layer1_topoollgy.json)](https://github.com/ool-mddo/mddo-bgp/blob/main/original_asis/batfish/layer1_topology.json)を参照。これは、interface description の情報→netbox→batfishインプット用のL1トポロジとして出力したものです。詳細は[playground](https://github.com/ool-mddo/playground/tree/main)にある、[物理トポロジデータの生成](https://github.com/ool-mddo/playground/blob/main/demo/layer1_topology/doc/operation.md)を参照してください。
 
-## BGP Policy
+## BGP Policy (Intermediate output)
 
 BGPポリシ(ルール本体)のデータ取得についてはBatfishを利用せず[独自parser(bgp-policy-parser)](https://github.com/ool-mddo/bgp-policy-parser)を使用しています。
 
@@ -37,3 +40,7 @@ BGPポリシ(ルール本体)のデータ取得についてはBatfishを利用�
   * [Cisco系](./ttp_outputs/cisco_ios_xr/)
   * [Juniper系](./ttp_outputs/juniper/)
 * [標準化した最終的な出力](./ttp_outputs/bgp_policies/)
+
+## Topology (Output data)
+- [topology.json](./topology/topology.json)
+  - See also: [ネットワークのモデル](https://github.com/ool-mddo/playground/blob/main/doc/network_model.md)
