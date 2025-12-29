@@ -1,0 +1,5 @@
+,Node,VRF,Process_ID,Areas,Reference_Bandwidth,Router_ID,Export_Policy_Sources,Area_Border_Router
+0,regiona-rt1,default,default,['0'],1000000000.0,10.10.10.10,['EXPORTOSPF'],False
+1,regionb-rt1,default,1,['0'],10000000.0,1.1.1.1,[],False
+2,regionc-rt1,default,65000,['0'],100000000.0,192.168.2.1,[],False
+3,regionb-rt2,default,1,['0'],10000000.0,1.1.1.2,[],False

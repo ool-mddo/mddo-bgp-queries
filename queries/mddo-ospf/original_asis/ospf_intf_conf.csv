@@ -1,0 +1,14 @@
+,Interface,VRF,Process_ID,OSPF_Area_Name,OSPF_Enabled,OSPF_Passive,OSPF_Cost,OSPF_Network_Type,OSPF_Hello_Interval,OSPF_Dead_Interval
+0,regionb-rt1[Ethernet3],default,1,0,True,False,1,BROADCAST,10,40
+1,regionc-rt1[GigabitEthernet0/0/0/2],default,65000,0,True,False,1,BROADCAST,10,40
+2,regionc-rt1[GigabitEthernet0/0/0/1],default,65000,0,True,False,1,BROADCAST,10,40
+3,regiona-rt1[ge-0/0/2.0],default,default,0,True,False,1,BROADCAST,10,40
+4,regiona-rt1[ge-0/0/1.0],default,default,0,True,False,1,BROADCAST,10,40
+5,regionb-rt2[Ethernet2],default,1,0,True,True,1,BROADCAST,10,40
+6,regiona-rt1[ge-0/0/0.0],default,default,0,True,False,1,BROADCAST,10,40
+7,regionb-rt1[Ethernet2],default,1,0,True,False,1,BROADCAST,10,40
+8,regionb-rt2[Ethernet1],default,1,0,True,False,1,BROADCAST,10,40
+9,regionb-rt1[Ethernet1],default,1,0,True,False,1,BROADCAST,10,40
+10,regionb-rt2[Management1],default,1,0,True,True,,BROADCAST,10,40
+11,regionc-rt1[GigabitEthernet0/0/0/0],default,65000,0,True,False,1,BROADCAST,10,40
+12,regionb-rt1[Management1],default,1,0,True,True,,BROADCAST,10,40
