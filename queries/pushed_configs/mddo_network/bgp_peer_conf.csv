@@ -1,0 +1,13 @@
+,Node,VRF,Local_AS,Local_IP,Local_Interface,Confederation,Remote_AS,Remote_IP,Description,Route_Reflector_Client,Cluster_ID,Peer_Group,Import_Policy,Export_Policy,Send_Community,Is_Passive
+0,regiona-pe01,default,65000,1.1.1.1,,,65000,1.1.1.2,,False,,INT,[],['EXPORTOSPF'],True,False
+1,regiona-pe01,default,65000,,,,65001,10.1.0.2,,False,,EXT,[],['EXPORTOSPF'],True,False
+2,regiona-pe01,default,65000,,,,65001,10.1.2.2,,False,,EXT,[],['EXPORTOSPF'],True,False
+3,regiona-pe02,default,65000,1.1.1.2,,,65000,1.1.1.1,,False,,INT,[],['EXPORTOSPF'],True,False
+4,regiona-pe02,default,65000,,,,65001,10.1.1.2,,False,,EXT,[],['EXPORTOSPF'],True,False
+5,regiona-pe02,default,65000,,,,65001,10.1.3.2,,False,,EXT,[],['EXPORTOSPF'],True,False
+6,regionb-pe01,default,65001,,,,65000,10.1.0.1,,False,,EXT,[],['EXPORTOSPF'],True,False
+7,regionb-pe01,default,65001,,,,65000,10.1.3.1,,False,,EXT,[],['EXPORTOSPF'],True,False
+8,regionb-pe01,default,65001,2.2.2.2,,,65001,2.2.2.3,,False,,INT,[],['EXPORTOSPF'],True,False
+9,regionb-pe02,default,65001,2.2.2.3,,,65001,2.2.2.2,,False,,INT,[],['EXPORTOSPF'],True,False
+10,regionb-pe02,default,65001,,,,65000,10.1.1.1,,False,,EXT,[],['EXPORTOSPF'],True,False
+11,regionb-pe02,default,65001,,,,65000,10.1.2.1,,False,,EXT,[],['EXPORTOSPF'],True,False

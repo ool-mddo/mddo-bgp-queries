@@ -1,0 +1,5 @@
+,Node,VRF,Router_ID,Confederation_ID,Confederation_Members,Multipath_EBGP,Multipath_IBGP,Multipath_Match_Mode,Neighbors,Route_Reflector,Tie_Breaker
+0,regiona-pe01,default,1.1.1.1,,,False,False,FIRST_AS,"['1.1.1.2', '10.1.0.2', '10.1.2.2']",False,ARRIVAL_ORDER
+1,regiona-pe02,default,1.1.1.2,,,False,False,FIRST_AS,"['1.1.1.1', '10.1.1.2', '10.1.3.2']",False,ARRIVAL_ORDER
+2,regionb-pe01,default,2.2.2.2,,,False,False,FIRST_AS,"['10.1.0.1', '10.1.3.1', '2.2.2.3']",False,ARRIVAL_ORDER
+3,regionb-pe02,default,2.2.2.3,,,False,False,FIRST_AS,"['2.2.2.2', '10.1.1.1', '10.1.2.1']",False,ARRIVAL_ORDER

@@ -1,0 +1,10 @@
+,Node,Configuration_Format
+0,regiona-rt2,JUNIPER
+1,regionc-svr01,HOST
+2,regiona-rt1,JUNIPER
+3,regionb-rt1,ARISTA
+4,regionc-rt2,CISCO_IOS_XR
+5,regionb-svr01,HOST
+6,regionb-rt2,ARISTA
+7,regionc-rt1,CISCO_IOS_XR
+8,regiona-svr02,HOST

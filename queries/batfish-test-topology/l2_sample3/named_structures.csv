@@ -1,0 +1,11 @@
+,Node,Structure_Type,Structure_Name,Structure_Definition
+0,host11,VRF,default,"{'name': 'default', 'staticRoutes': [{'class': 'org.batfish.datamodel.StaticRoute', 'administrativeCost': 1, 'metric': 0, 'network': '0.0.0.0/0', 'nextHopInterface': 'eth0', 'nextHopIp': '192.168.1.1', 'tag': -1}]}"
+1,host12,VRF,default,"{'name': 'default', 'staticRoutes': [{'class': 'org.batfish.datamodel.StaticRoute', 'administrativeCost': 1, 'metric': 0, 'network': '0.0.0.0/0', 'nextHopInterface': 'eth0', 'nextHopIp': '192.168.1.1', 'tag': -1}]}"
+2,host13,VRF,default,"{'name': 'default', 'staticRoutes': [{'class': 'org.batfish.datamodel.StaticRoute', 'administrativeCost': 1, 'metric': 0, 'network': '0.0.0.0/0', 'nextHopInterface': 'eth0', 'nextHopIp': '192.168.1.1', 'tag': -1}]}"
+3,host14,VRF,default,"{'name': 'default', 'staticRoutes': [{'class': 'org.batfish.datamodel.StaticRoute', 'administrativeCost': 1, 'metric': 0, 'network': '0.0.0.0/0', 'nextHopInterface': 'eth0', 'nextHopIp': '192.168.1.1', 'tag': -1}]}"
+4,host21,VRF,default,"{'name': 'default', 'staticRoutes': [{'class': 'org.batfish.datamodel.StaticRoute', 'administrativeCost': 1, 'metric': 0, 'network': '0.0.0.0/0', 'nextHopInterface': 'eth0', 'nextHopIp': '192.168.2.1', 'tag': -1}]}"
+5,host22,VRF,default,"{'name': 'default', 'staticRoutes': [{'class': 'org.batfish.datamodel.StaticRoute', 'administrativeCost': 1, 'metric': 0, 'network': '0.0.0.0/0', 'nextHopInterface': 'eth0', 'nextHopIp': '192.168.2.1', 'tag': -1}]}"
+6,host23,VRF,default,"{'name': 'default', 'staticRoutes': [{'class': 'org.batfish.datamodel.StaticRoute', 'administrativeCost': 1, 'metric': 0, 'network': '0.0.0.0/0', 'nextHopInterface': 'eth0', 'nextHopIp': '192.168.2.1', 'tag': -1}]}"
+7,host24,VRF,default,"{'name': 'default', 'staticRoutes': [{'class': 'org.batfish.datamodel.StaticRoute', 'administrativeCost': 1, 'metric': 0, 'network': '0.0.0.0/0', 'nextHopInterface': 'eth0', 'nextHopIp': '192.168.2.1', 'tag': -1}]}"
+8,switch1,VRF,default,"{'name': 'default', 'resolutionPolicy': '~RESOLUTION_POLICY~'}"
+9,switch2,VRF,default,"{'name': 'default', 'resolutionPolicy': '~RESOLUTION_POLICY~'}"

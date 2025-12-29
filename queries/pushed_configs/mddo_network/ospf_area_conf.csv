@@ -1,0 +1,9 @@
+,Node,VRF,Process_ID,Area,Area_Type,Active_Interfaces,Passive_Interfaces
+0,regiona-pe01,default,default,0,NONE,"['ge-0/0/1.0', 'ge-0/0/2.0', 'lo0.0']",[]
+1,regionb-pe01,default,default,0,NONE,"['ge-0/0/1.0', 'ge-0/0/2.0', 'lo0.0']",[]
+2,regiona-pe02,default,default,0,NONE,"['ge-0/0/1.0', 'ge-0/0/3.0', 'lo0.0']",[]
+3,regiona-ce02,default,1,0,NONE,"['Ethernet2', 'Port-Channel1']","['Management1', 'Vlan10', 'Vlan20']"
+4,regiona-ce01,default,1,0,NONE,"['Ethernet1', 'Port-Channel1']","['Management1', 'Vlan10', 'Vlan20']"
+5,regionb-ce02,default,default,0,NONE,"['ae0.0', 'ge-0/0/1.0']",[]
+6,regionb-ce01,default,default,0,NONE,"['ae0.0', 'ge-0/0/0.0']",[]
+7,regionb-pe02,default,default,0,NONE,"['ge-0/0/1.0', 'ge-0/0/3.0', 'lo0.0']",[]

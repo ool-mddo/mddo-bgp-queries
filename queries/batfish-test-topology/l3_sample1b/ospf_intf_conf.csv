@@ -1,0 +1,13 @@
+,Interface,VRF,Process_ID,OSPF_Area_Name,OSPF_Enabled,OSPF_Passive,OSPF_Cost,OSPF_Network_Type,OSPF_Hello_Interval,OSPF_Dead_Interval
+0,border01[FastEthernet1/0],default,1,100,True,False,1,BROADCAST,10,40
+1,core02[FastEthernet0/0],default,1,0,True,False,1,BROADCAST,10,40
+2,core01[FastEthernet1/1],default,1,10,True,False,1,BROADCAST,10,40
+3,core02[FastEthernet1/0],default,1,100,True,False,1,BROADCAST,10,40
+4,core01[FastEthernet1/0],default,1,100,True,False,1,BROADCAST,10,40
+5,border01[FastEthernet1/1],default,1,100,True,False,1,BROADCAST,10,40
+6,core01[FastEthernet0/0],default,1,0,True,False,1,BROADCAST,10,40
+7,border12[FastEthernet0/0],default,1,10,True,False,1,BROADCAST,10,40
+8,border11[FastEthernet0/0],default,1,10,True,False,1,BROADCAST,10,40
+9,border11[FastEthernet1/0],default,1,10,True,False,1,BROADCAST,10,40
+10,border12[FastEthernet1/0],default,1,10,True,False,1,BROADCAST,10,40
+11,core02[FastEthernet1/1],default,1,10,True,False,1,BROADCAST,10,40

@@ -1,0 +1,10 @@
+,Node,Configuration_Format
+0,c01,CISCO_IOS
+1,a01,CISCO_IOS
+2,border11,CISCO_IOS
+3,c02,CISCO_IOS
+4,core02,CISCO_IOS
+5,border21,CISCO_IOS
+6,core01,CISCO_IOS
+7,border01,CISCO_IOS
+8,border12,CISCO_IOS
